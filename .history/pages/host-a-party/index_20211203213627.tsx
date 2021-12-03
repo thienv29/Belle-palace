@@ -10,14 +10,14 @@ import 'photoswipe/dist/default-skin/default-skin.css'
 import { Gallery, Item } from 'react-photoswipe-gallery'
 const HostAParty: NextPage = () => {
     const listImages = ["host-a-party-01.jpg", "host-a-party-02.jpg", "service-2.jpg", "about-us-3.jpg"]
-
+    
     useEffect(() => {
         AOS.init({ duration: 800 })
 
     }, [])
     return (
         <SSRProvider>
-            <Layout title="Host a Party">
+            <Layout title="cc">
                 <div className={style.bg}>
                     <div className={style.overlayWhite}>
                         <Container style={{ zIndex: "1" }} className={style.container}>
@@ -32,8 +32,8 @@ const HostAParty: NextPage = () => {
                             <div className={style.list_images}>
                                 <Gallery>
                                     <Row>
-                                        {listImages.map((image, index) => {
-                                            return <Col key={index} sm="6" md="3" data-aos="zoom-in" data-aos-once="true" >
+                                        {listImages.map((image,index) => {
+                                            return <Col key={index} sm="6" md="3" data-aos="zoom-in"data-aos-once="false" >
                                                 <Item
                                                     original={`/images/host-a-party/${image}`}
                                                     width="270"

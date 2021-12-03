@@ -180,7 +180,6 @@ header {
     #basic-navbar-nav .item-nav{
       display: flex;
       justify-content: center;
-      margin: 0;
     }
     #basic-navbar-nav{
       position: absolute;

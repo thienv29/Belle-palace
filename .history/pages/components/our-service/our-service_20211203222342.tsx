@@ -33,7 +33,7 @@ const OurService = () => {
                         </a>
                     </Col>
                     <Col className="full767">
-                        <a href="/service" className={style.product_container}>
+                        <a href className={style.product_container}>
                             <div className={style.avatar_img}>
                                 <img src="/images/service-3.jpg" alt="" width="100%" height="100%" />
                             </div>

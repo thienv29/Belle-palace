@@ -17,7 +17,7 @@ const HostAParty: NextPage = () => {
     }, [])
     return (
         <SSRProvider>
-            <Layout title="Host a Party">
+            <Layout title="host a Party">
                 <div className={style.bg}>
                     <div className={style.overlayWhite}>
                         <Container style={{ zIndex: "1" }} className={style.container}>

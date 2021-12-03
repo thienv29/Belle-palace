@@ -39,7 +39,7 @@ const AboutUs = () => {
                                         height="182"
                                     >
                                         {({ ref, open }) => (<>
-                                            <nav ref={ref}  className={style.img_container} data-aos="zoom-in" data-aos-once="true"  >
+                                            <nav ref={ref}  className={style.img_container} data-aos="zoom-in"   >
                                                 <img src="/images/about-us.jpg" alt="" width="100%" height="100%" />
                                                 <div onClick={open} className={style.overlay}></div>
                                             </nav>
@@ -55,7 +55,7 @@ const AboutUs = () => {
                                         height="182"
                                     >
                                         {({ ref, open }) => (<>
-                                            <nav ref={ref}  className={style.img_container} data-aos="zoom-in" data-aos-once="true" >
+                                            <nav ref={ref}  className={style.img_container} data-aos="zoom-in"  >
                                                 <img src="/images/about-us-2.jpg" alt="" width="100%" height="100%" />
                                                 <div onClick={open} className={style.overlay}></div>
                                             </nav>
@@ -71,7 +71,7 @@ const AboutUs = () => {
                                         height="182"
                                     >
                                         {({ ref , open }) => (<>
-                                            <nav ref={ref}  className={style.img_container} data-aos="zoom-in" data-aos-once="true" >
+                                            <nav ref={ref}  className={style.img_container} data-aos="zoom-in"  >
                                                 <img src="/images/about-us-3.jpg" alt="" width="100%" height="100%" />
                                                 <div onClick={open} className={style.overlay}></div>
                                             </nav>

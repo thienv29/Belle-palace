@@ -3,7 +3,6 @@ import style from './header-sub.module.css'
 import { FaSearch, FaFacebookF } from "react-icons/fa";
 import ModalSearch from "../modal-search/modal-search";
 import { useState, useCallback } from 'react'
-import { GetServerSideProps, GetStaticProps, GetStaticPropsContext } from "next";
 const HeaderSub = () => {
     const [ActiveSearch, setActive] = useState(0)
     const handleClickIconSearch = useCallback(

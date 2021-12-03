@@ -17,7 +17,7 @@ const HostAParty: NextPage = () => {
     }, [])
     return (
         <SSRProvider>
-            <Layout title="Host a Party">
+            <Layout title="cc">
                 <div className={style.bg}>
                     <div className={style.overlayWhite}>
                         <Container style={{ zIndex: "1" }} className={style.container}>
@@ -33,7 +33,7 @@ const HostAParty: NextPage = () => {
                                 <Gallery>
                                     <Row>
                                         {listImages.map((image, index) => {
-                                            return <Col key={index} sm="6" md="3" data-aos="zoom-in" data-aos-once="true" >
+                                            return <Col key={index} sm="6" md="3" data-aos="zoom-in"  >
                                                 <Item
                                                     original={`/images/host-a-party/${image}`}
                                                     width="270"

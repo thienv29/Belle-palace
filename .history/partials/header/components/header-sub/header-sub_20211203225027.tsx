@@ -18,7 +18,7 @@ const HeaderSub = () => {
     )
     return (
         <Navbar className={style.header_sub} expand="lg">
-            <Container className="custom" style={{ justifyContent: 'center'}} >
+            <Container className="custom" >
                 <Row className="fullwidth" >
                     <Col lg="10" xl="8" className={`${style.navbar_sub_content} `}>
                         <Row className=" md-none  "  >
@@ -39,8 +39,10 @@ const HeaderSub = () => {
                         <a style={{ lineHeight: "100%" }} href={process.env.NEXT_PUBLIC_FACEBOOK}>
                             <FaFacebookF className="colorHover pointer" />
                         </a>
+
                     </Col>
                 </Row>
+
             </Container>
             <ModalSearch active={ActiveSearch} handleClickIconSearch={handleClickIconSearch} />
         </Navbar>

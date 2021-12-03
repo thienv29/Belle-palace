@@ -18,8 +18,8 @@ const HeaderSub = () => {
     )
     return (
         <Navbar className={style.header_sub} expand="lg">
-            <Container className="custom" style={{ justifyContent: 'center'}} >
-                <Row className="fullwidth" >
+            <Container className="custom" >
+                <Row className="fullwidth"  >
                     <Col lg="10" xl="8" className={`${style.navbar_sub_content} `}>
                         <Row className=" md-none  "  >
                             <div className={style.text_style}>
