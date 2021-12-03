@@ -24,24 +24,24 @@ const OurService = () => {
                         </Link>
                     </Col>
                     <Col className="full767">
-                        <Link href="/service" className={style.product_container}>
+                        <a href="/service" className={style.product_container}>
                             <div className={style.avatar_img}>
                                 <img src="/images/service-2.jpg" alt="" width="100%" height="100%" />
                             </div>
                             <div className={style.product_detail}>
                                 <h3 className="color-primary">Pedicure</h3>
                             </div>
-                        </Link>
+                        </a>
                     </Col>
                     <Col className="full767">
-                        <Link href="/service" className={style.product_container}>
+                        <a href="/service" className={style.product_container}>
                             <div className={style.avatar_img}>
                                 <img src="/images/service-3.jpg" alt="" width="100%" height="100%" />
                             </div>
                             <div className={style.product_detail}>
                                 <h3 className="color-primary">Waxing</h3>
                             </div>
-                        </Link>
+                        </a>
                     </Col>
 
                 </Row>

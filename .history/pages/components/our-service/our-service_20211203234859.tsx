@@ -41,7 +41,7 @@ const OurService = () => {
                             <div className={style.product_detail}>
                                 <h3 className="color-primary">Waxing</h3>
                             </div>
-                        </Link>
+                        </a>
                     </Col>
 
                 </Row>
