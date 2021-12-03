@@ -1,0 +1,55 @@
+{
+  "message": ["Load service groups successful!"],
+  "status": 200,
+  "result": [
+    {
+      "id": "01524fe6-e37b-4e92-897c-d87f57bacadf",
+      "name": "MANICURES",
+      "storeId": "0728d3cc-8bab-11ea-953c-3085a9f0088b",
+      "services": [
+        {
+          "id": "4609c0ef-034e-4d7f-8988-adb2be10711a",
+          "name": "Belle Palace Classic Manicure",
+          "timeToComplete": 20,
+          "price": 17.0,
+          "credit": 5.0,
+          "serviceGroup": {
+            "id": "01524fe6-e37b-4e92-897c-d87f57bacadf",
+            "name": "MANICURES",
+            "storeId": "0728d3cc-8bab-11ea-953c-3085a9f0088b",
+            "createdDate": "2020-04-24T00:00:00",
+            "updatedDate": null
+          },
+          "onBooking": true,
+          "description": null,
+          "serviceChargeType": null,
+          "serviceCharge": null,
+          "createdDate": "2020-04-24T00:00:00",
+          "updatedDate": null
+        },
+        {
+          "id": "882c5dc0-76d3-4222-a082-d01bb425f1fa",
+          "name": "Gel Manicure",
+          "timeToComplete": 30,
+          "price": 33.0,
+          "credit": 10.0,
+          "serviceGroup": {
+            "id": "01524fe6-e37b-4e92-897c-d87f57bacadf",
+            "name": "MANICURES",
+            "storeId": "0728d3cc-8bab-11ea-953c-3085a9f0088b",
+            "createdDate": "2020-04-24T00:00:00",
+            "updatedDate": null
+          },
+          "onBooking": true,
+          "description": null,
+          "serviceChargeType": null,
+          "serviceCharge": null,
+          "createdDate": "2020-04-24T00:00:00",
+          "updatedDate": null
+        }
+      ],
+      "createdDate": "2020-04-24T00:00:00",
+      "updatedDate": null
+    }
+  ]
+}

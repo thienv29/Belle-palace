@@ -1,0 +1,22 @@
+.container{
+    padding: 20px 32px;
+
+}
+.line_over{
+    text-align: center  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line_over_icon{
+    font-size: 25px;
+    color: rgb(75, 75, 75);
+}
+.deivice_line{
+    margin: 0px 5px;
+    width: 30%;
+    height: 1px;
+    background-color: black;
+
+}

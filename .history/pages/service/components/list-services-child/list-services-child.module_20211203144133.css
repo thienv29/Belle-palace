@@ -1,0 +1,29 @@
+.service {
+    color: #050000;
+    text-decoration: none;
+}
+.service_header {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: "Roboto", Sans-serif;
+    color: #b58a60;
+    margin-top: 28px;
+}
+.service_header .left {
+    max-width: 80%;
+}
+.service_header .mid {
+    flex: 1 0;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    margin: 0 10px;
+}
+.service_description {
+    color: #050000;
+    font-family: "Roboto", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+}

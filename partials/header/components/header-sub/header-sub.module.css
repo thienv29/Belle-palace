@@ -1,0 +1,40 @@
+.header_sub {
+  background-color: #16163f;
+  height: 37px;
+}
+.navbar_sub_content {
+  color: white;
+  display: flex;
+}
+.navbar_sub_content a{
+  color: white;
+    text-decoration: none;
+}
+.navbar_sub_content_right {
+  justify-content: flex-end;
+  align-items: center;
+}
+.text_style span {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23.8px;
+  margin: 11px;
+}
+.text_style {
+  width: unset;
+  line-height: 100%;
+}
+.icon {
+  width: 16px;
+  height: 16px;
+}
+@media (max-width: 990px) {
+  .navbar_sub_content_center{
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  .header_sub {
+    padding: 10px;
+  }
+}
