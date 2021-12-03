@@ -189,7 +189,7 @@ header {
         top: 100%;
     }
     .md-none {
-        display: none !important;
+        display: none;
     }
 }
 @media (max-width: 767px) {

@@ -189,11 +189,11 @@ header {
         top: 100%;
     }
     .md-none {
-        display: none !important;
+        display: none;
     }
 }
 @media (max-width: 767px) {
-    .full-md {
+    .full767 {
         width: 100% !important;
         flex: unset;
     }

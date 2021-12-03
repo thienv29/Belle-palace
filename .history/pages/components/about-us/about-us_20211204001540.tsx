@@ -15,7 +15,7 @@ const AboutUs = () => {
         <div className={style.section}>
             <Container className="custom">
                 <Row>
-                    <Col sm="8" className="full-md">
+                    <Col sm="8" className="full767">
                         <div className={style.heading}>
                             <h3>About Us</h3>
                         </div>
@@ -29,9 +29,9 @@ const AboutUs = () => {
                             <h4>&quot; Be yourself in style, to the tip of your nails &quot;</h4>
                         </div>
                     </Col>
-                    <Col sm="4" className="full-md" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <Col sm="4" className="full767" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                         <Gallery>
-                            <Row className="full-md" >
+                            <Row className="full767" >
                                 <Col sm="6" className="full-md" >
                                     <Item
                                         original='/images/about-us.jpg'

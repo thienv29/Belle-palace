@@ -90,7 +90,7 @@ header {
 .react-slideshow-container .default-nav {
     background-color: transparent !important;
 }
-#slide_show .indicators {
+#slide-show .indicators {
     position: absolute;
     top: 92%;
     left: 50%;
@@ -108,7 +108,7 @@ header {
 .react-slideshow-container + ul.indicators li {
     margin-left: 5px !important  ;
 }
-#slide_show .default-nav path {
+#slide-show .default-nav path {
     fill: white;
 }
 .slideShow_content {
@@ -189,7 +189,7 @@ header {
         top: 100%;
     }
     .md-none {
-        display: none !important;
+        display: none;
     }
 }
 @media (max-width: 767px) {

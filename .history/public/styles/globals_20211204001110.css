@@ -4,7 +4,7 @@ body {
     background-color: #fbf6f6;
     padding: 0;
     margin: 0;
-    font-family:"Roboto", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    font-family:"Roboto" -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
         Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 :root {
@@ -189,11 +189,11 @@ header {
         top: 100%;
     }
     .md-none {
-        display: none !important;
+        display: none;
     }
 }
 @media (max-width: 767px) {
-    .full-md {
+    .full767 {
         width: 100% !important;
         flex: unset;
     }

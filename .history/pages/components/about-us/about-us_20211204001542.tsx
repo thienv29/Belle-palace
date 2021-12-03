@@ -15,7 +15,7 @@ const AboutUs = () => {
         <div className={style.section}>
             <Container className="custom">
                 <Row>
-                    <Col sm="8" className="full-md">
+                    <Col sm="8" className="full767">
                         <div className={style.heading}>
                             <h3>About Us</h3>
                         </div>

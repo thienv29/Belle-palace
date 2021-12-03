@@ -60,7 +60,7 @@ const Calendar = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col sm="6" className={`${style.gg_map} full-md`}>
+                    <Col sm="6" className={`${style.gg_map} full767`}>
                         <div className={style.iframe}>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.824937994379!2d-75.07010744847003!3d40.01235777931325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b6715bd9398d%3A0x39bf6ba763f3e3c3!2s5597%20Tulip%20St%2C%20Philadelphia%2C%20PA%2019124%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1638520692878!5m2!1svi!2s" width="600" height="450" style={{border:0}} allowFullScreen loading="lazy"></iframe>
 

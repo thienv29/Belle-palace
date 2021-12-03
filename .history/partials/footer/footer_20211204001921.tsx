@@ -14,7 +14,7 @@ const Footer = () => {
                             <FaFacebookF color="white" className={style.icon} />
                         </a>
                     </Col>
-                    <Col className="full-md">
+                    <Col className="full767">
                         <div className={style.col_center}>
                         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBellagioHarbisonNailSpa%2F&tabs=timeline&width=340&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=549111372791376" width="340" height="200" style={{border:'none',overflow:'hidden'}} scrolling="no" frameBorder="0" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                             <div className={style.title_center}>

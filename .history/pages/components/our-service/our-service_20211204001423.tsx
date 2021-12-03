@@ -13,7 +13,7 @@ const OurService = () => {
                     </div>
                 </Row>
                 <Row className={style.list_product}>
-                    <Col className="full-md">
+                    <Col className="full767">
                         <Link href="/service" >
                             <a  className={style.product_container}>
                                 <div className={style.avatar_img}>
@@ -25,7 +25,7 @@ const OurService = () => {
                             </a>
                         </Link>
                     </Col>
-                    <Col className="full-md">
+                    <Col className="full767">
                         <Link href="/service" >
                             <a  className={style.product_container}>
                                 <div className={style.avatar_img}>
