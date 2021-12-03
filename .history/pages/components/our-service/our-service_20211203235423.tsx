@@ -14,8 +14,9 @@ const OurService = () => {
                 </Row>
                 <Row className={style.list_product}>
                     <Col className="full767">
-                        <Link href="/service" >
-                            <a  className={style.product_container}>
+                        <Link>
+
+                            <a href="/service" className={style.product_container}>
                                 <div className={style.avatar_img}>
                                     <img src="/images/service-1.jpg" alt="" width="100%" height="100%" />
                                 </div>
@@ -26,8 +27,9 @@ const OurService = () => {
                         </Link>
                     </Col>
                     <Col className="full767">
-                        <Link href="/service" >
-                            <a  className={style.product_container}>
+                        <Link>
+
+                            <a href="/service" className={style.product_container}>
                                 <div className={style.avatar_img}>
                                     <img src="/images/service-2.jpg" alt="" width="100%" height="100%" />
                                 </div>
@@ -38,8 +40,9 @@ const OurService = () => {
                         </Link>
                     </Col>
                     <Col className="full767">
-                        <Link href="/service" >
-                            <a  className={style.product_container}>
+                        <Link>
+
+                            <a href="/service" className={style.product_container}>
                                 <div className={style.avatar_img}>
                                     <img src="/images/service-3.jpg" alt="" width="100%" height="100%" />
                                 </div>
