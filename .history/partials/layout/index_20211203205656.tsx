@@ -28,7 +28,7 @@ const Layout = ({ children,pageMeta }: any) => {
                 <meta property="og:type" content={meta.type}/> 
                 <meta property="og:site_name" content={meta.site_name}/> 
                 <meta property="og:title" content={meta.title}/> 
-                <meta httpEquiv="Content-type" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width"/>
+                <meta http-Equiv="Content-type" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
                 <link rel="icon" href="/images/Belle-Palace32.png" sizes="32x32" />
                 <link rel="icon" href="/images/Belle-Palace192.png" sizes="192x192" />
                 <link rel="apple-touch-icon" href="/images/Belle-Palace180.png"  />
