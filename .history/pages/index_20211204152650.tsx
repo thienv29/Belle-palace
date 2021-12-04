@@ -1,13 +1,13 @@
 import type { GetServerSideProps, GetStaticProps, NextPage } from 'next'
 import Layout from '../partials/layout'
 import SSRProvider from 'react-bootstrap/SSRProvider';
-import SlideShow from '../components/slide-show/slide-show';
-import OurService from '../components/our-service/our-service';
-import AboutUs from '../components/about-us/about-us';
-import Calendar from '../components/calendar/calendar';
+import SlideShow from './components/slide-show/slide-show';
+import OurService from './components/our-service/our-service';
+import AboutUs from './components/about-us/about-us';
+import Calendar from './components/calendar/calendar';
 import { searchAll } from '../core/utils/search';
-import Search from '../components/search/search';
-import Certificate from '../components/certificate/certificate';
+import Search from './components/search/search';
+import Certificate from './components/certificate/certificate';
 import { getInfoPage } from '../core/apis';
 
 
