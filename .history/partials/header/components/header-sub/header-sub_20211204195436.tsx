@@ -3,7 +3,6 @@ import style from './header-sub.module.css'
 import { FaSearch, FaFacebookF } from "react-icons/fa";
 import ModalSearch from "../modal-search/modal-search";
 import { useState, useCallback, useEffect } from 'react'
-import { formatPhone } from "../../../../core/utils/formatPhone";
 
 
 const HeaderSub = ({infoPage}:any) => {
@@ -29,7 +28,7 @@ const HeaderSub = ({infoPage}:any) => {
                         <Row className=" md-none  "  >
                             <div className={style.text_style}>
                                 <img className={style.icon} src="/icons/phone.svg" />
-                                <span>{formatPhone(infoPage?.result?.phone)}</span>
+                                <span>{}</span>
                             </div>
                             <div className={style.text_style}>
                                 <img className={style.icon} src="/icons/gps.svg" />

@@ -5,6 +5,7 @@ import style from './calendar.module.css'
 
 const Calendar = (props:any) => {
     const result = props.data.result
+    console.log(result);
     
     return (
         <div className={style.container}>

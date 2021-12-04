@@ -3,7 +3,6 @@ import style from './header-sub.module.css'
 import { FaSearch, FaFacebookF } from "react-icons/fa";
 import ModalSearch from "../modal-search/modal-search";
 import { useState, useCallback, useEffect } from 'react'
-import { formatPhone } from "../../../../core/utils/formatPhone";
 
 
 const HeaderSub = ({infoPage}:any) => {
@@ -19,8 +18,15 @@ const HeaderSub = ({infoPage}:any) => {
         },
         [ActiveSearch],
     )
-    
-    
+    const formatPhone : (phone:string)=> string = (phone:string) => {
+      const phonse = '2159609999'
+       const phoneAfter =  `+1 ${phone.substring(0,3)}-${phone.substring(3,6)}-${phone.substring(6)}`;
+        
+        
+      return phoneAfter
+
+    }
+    formatPhone()
     return (
         <Navbar className={style.header_sub} expand="lg">
             <Container className="custom" style={{ justifyContent: 'center' }} >
@@ -29,7 +35,7 @@ const HeaderSub = ({infoPage}:any) => {
                         <Row className=" md-none  "  >
                             <div className={style.text_style}>
                                 <img className={style.icon} src="/icons/phone.svg" />
-                                <span>{formatPhone(infoPage?.result?.phone)}</span>
+                                <span>{infoPage?.result?.phone}</span>
                             </div>
                             <div className={style.text_style}>
                                 <img className={style.icon} src="/icons/gps.svg" />

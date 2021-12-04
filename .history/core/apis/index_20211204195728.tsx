@@ -1,5 +1,4 @@
 import axios from "axios"
-import { formatPhone } from "../utils/formatPhone"
 export const getServices = async () => {
     const storeId = process.env.STORED_ID
     const res = await axios({
@@ -18,5 +17,6 @@ export const getInfoPage = async () => {
         headers: {}
     })
     const data = res.data
+    data?.result?.phone
     return data
 }

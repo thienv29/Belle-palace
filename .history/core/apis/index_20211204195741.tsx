@@ -18,5 +18,6 @@ export const getInfoPage = async () => {
         headers: {}
     })
     const data = res.data
+    data?.result?.phone = formatPhone(data?.result?.phone )
     return data
 }

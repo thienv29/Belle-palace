@@ -29,7 +29,7 @@ const HeaderSub = ({infoPage}:any) => {
                         <Row className=" md-none  "  >
                             <div className={style.text_style}>
                                 <img className={style.icon} src="/icons/phone.svg" />
-                                <span>{formatPhone(infoPage?.result?.phone)}</span>
+                                <span>{formatPhone()}</span>
                             </div>
                             <div className={style.text_style}>
                                 <img className={style.icon} src="/icons/gps.svg" />

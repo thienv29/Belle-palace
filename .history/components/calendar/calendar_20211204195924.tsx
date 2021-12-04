@@ -5,6 +5,7 @@ import style from './calendar.module.css'
 
 const Calendar = (props:any) => {
     const result = props.data.result
+    console.log(result);
     
     return (
         <div className={style.container}>
@@ -58,7 +59,7 @@ const Calendar = (props:any) => {
                                     Phone:
                                 </div>
                                 <div className={style.info_normal}>
-                                {formatPhone(result?.phone)}
+                                {formatPhone(infoPage?.result?.phone)}
                                 </div>
                             </div>
                         </div>

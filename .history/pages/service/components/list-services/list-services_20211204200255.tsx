@@ -17,7 +17,7 @@ const ListServices = ({ data }: any) => {
                         </div>
                     )
                 } else {
-                    return <div key={index}></div>
+                    return <div></div>
                 }
 
             })}
