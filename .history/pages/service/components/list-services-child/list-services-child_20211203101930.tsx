@@ -6,7 +6,7 @@ const ListServicesChild = ({ data }: any) => {
         <div>
             {data?.map((item :any,index :number) => {
                 return (
-                    <a  key={index} className={style.service}>
+                    <a href="#" key={index} className={style.service}>
                         <div className={style.service_header}>
                             <span className={style.left}>
                             {`${item.name} (Approx. ${item.timeToComplete} min.)`}
