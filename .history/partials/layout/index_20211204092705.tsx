@@ -1,6 +1,7 @@
 import { useRouter } from "next/dist/client/router";
 import Head from "next/head";
 import React from "react";
+import head from "../../core/constants/head";
 import Footer from "../footer/footer";
 import Header from "../header/header";
 
