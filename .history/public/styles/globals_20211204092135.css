@@ -9,7 +9,6 @@ body {
 }
 #__next{
     overflow: hidden;
-    width: 100%;
 }
 :root {
     --color-yelow: #b58a60;
