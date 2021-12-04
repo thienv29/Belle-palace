@@ -71,7 +71,7 @@ const Calendar = (props:any) => {
                                 style={{border:0}}
                                 loading="lazy"
                                 allowFullScreen
-                                src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyB12a91SpS1s699OhnsEyMKk58pYdfv_Ec&q=${result?.address}`}>
+                                src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyB12a91SpS1s699OhnsEyMKk58pYdfv_Ec&q=${result.address}`}>
                             </iframe>
                         </div>
                     </Col>
