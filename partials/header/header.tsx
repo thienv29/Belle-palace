@@ -5,7 +5,7 @@ import HeaderSub from "./components/header-sub/header-sub";
 import { useRouter } from "next/dist/client/router";
 import { useEffect } from "react";
 
-const Header = ({ infoPage }: any) => {
+const Header = ({ infoPage,contentPage }: any) => {
     const router = useRouter();
     const path = router.asPath;
 
@@ -48,7 +48,7 @@ const Header = ({ infoPage }: any) => {
                         </Nav>
                         <a
                             className={style.btn_link}
-                            href={process.env.NEXT_PUBLIC_ONLINE_BOOKING}
+                            href={contentPage.onlineBooking}
                         >
                             <span className=" ">ONLINE BOOKING</span>
                             <HiArrowNarrowRight

@@ -5,7 +5,7 @@ import Footer from "../footer/footer";
 import Header from "../header/header";
 
 
-const Layout = ({ children, pageMeta,infoPage }: any) => {
+const Layout = ({ children, pageMeta,infoPage,contentPage }: any) => {
     
     const router = useRouter()
     const meta = {
@@ -38,13 +38,13 @@ const Layout = ({ children, pageMeta,infoPage }: any) => {
                 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
             </Head>
             <header>
-                <Header infoPage={infoPage} />
+                <Header infoPage={infoPage} contentPage={contentPage} />
             </header>
             <main style={{ marginTop: "113px" }}>
                 {children}
             </main>
             <footer>
-                <Footer />
+                <Footer contentPage={contentPage} />
             </footer>
 
         </div>

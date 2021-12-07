@@ -1,0 +1,37 @@
+.section{
+    background-color: #FBF6F6;
+    padding-top: 20px;
+}
+.container{
+    padding: 20px 32px;
+
+}
+.avatar_img{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.product_detail h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.product_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    text-decoration: none;
+}
+
+.list_product{
+    margin: 32px 0px;
+}
+@media (max-width: 767px) {
+    .avatar_img{
+        border-radius: 50px;
+        width: 80%;
+    }
+}

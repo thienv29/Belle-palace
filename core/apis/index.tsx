@@ -20,3 +20,14 @@ export const getInfoPage = async () => {
     const data = res.data
     return data
 }
+export const getContentPage = async () => {
+    
+    const res = await axios({
+        method: 'get',
+        url: `${process.env.NEXT_PUBLIC_DOMAIN}/api/readFileExcel`,
+        headers: {}
+    })
+
+    const data = res.data
+    return data
+}

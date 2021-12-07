@@ -1,0 +1,39 @@
+.certificate_container{
+   visibility: hidden;
+}
+.certificate_container.active{
+    visibility: visible;
+}
+.certificate_overlay{
+    position: fixed;
+    left: 0;
+    bottom:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    transition: all 0.5s;
+    z-index: 9999;
+}
+ .certificate_overlay.active{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.certificate{
+    display: flex;
+    align-items: flex-start;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
+    transition: all ease-in-out 1s;
+    right:-100%;
+    width: 80%;
+    max-width: 500px;
+
+}
+.certificate.active{
+    right: 0px;
+}
+.icon{
+    margin-left: -30px;
+    font-size: 30px;
+}

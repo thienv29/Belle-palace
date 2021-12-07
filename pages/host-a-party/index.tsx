@@ -8,8 +8,8 @@ import AOS from 'aos';
 import 'photoswipe/dist/photoswipe.css'
 import 'photoswipe/dist/default-skin/default-skin.css'
 import { Gallery, Item } from 'react-photoswipe-gallery'
-import { getInfoPage } from '../../core/apis';
-const HostAParty: NextPage = ({infoPage}:any) => {
+import { getContentPage, getInfoPage } from '../../core/apis';
+const HostAParty: NextPage = ({infoPage,contenPage}:any) => {
     const listImages = ["host-a-party-01.jpg", "host-a-party-02.jpg", "service-2.jpg", "about-us-3.jpg"]
     
     useEffect(() => {
@@ -18,7 +18,7 @@ const HostAParty: NextPage = ({infoPage}:any) => {
     }, [])
     return (
         <SSRProvider>
-            <Layout title="Host a Party" infoPage={infoPage}>
+            <Layout contentPage={contenPage} title="Host a Party" infoPage={infoPage}>
                 <div className={style.bg}>
                     <div className={style.overlayWhite}>        
                         <Container style={{ zIndex: "1" }} className={style.container}>
@@ -61,9 +61,11 @@ const HostAParty: NextPage = ({infoPage}:any) => {
 }
 export const getServerSideProps :GetServerSideProps = async () => {
     const infoPage = await getInfoPage()
+    const contenPage = await getContentPage()
     return {
       props: {
-        infoPage:infoPage
+        infoPage,
+        contenPage
       }
     }
 }

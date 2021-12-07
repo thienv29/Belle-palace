@@ -19,6 +19,6 @@
       "./node_modules/@types"
     ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "core/utils/readFileExcel/readFileExcel.ts"],
   "exclude": ["node_modules"]
 }

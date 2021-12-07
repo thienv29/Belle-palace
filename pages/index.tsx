@@ -8,30 +8,31 @@ import Calendar from '../components/calendar/calendar';
 import { searchAll } from '../core/utils/search';
 import Search from '../components/search/search';
 import Certificate from '../components/certificate/certificate';
-import { getInfoPage } from '../core/apis';
+import { getContentPage, getInfoPage } from '../core/apis';
+
 
 
 const Home: NextPage = (props: any) => {
- 
+
   if (props.param) {
     return (
       <SSRProvider>
-        <Layout infoPage={props.infoPage} title="Belle Palace Deptford – Belle Palace of Deptford – Belle Palace Deptford – Belle Palace of Deptford">
-        <Search param={props.param} listData={props.data}/>
+        <Layout contentPage={props.contenPage} infoPage={props.infoPage} title="Belle Palace Deptford – Belle Palace of Deptford – Belle Palace Deptford – Belle Palace of Deptford">
+          <Search param={props.param} listData={props.data} />
         </Layout>
       </SSRProvider>
     )
   }
-  
- 
+
+
   return (
     <SSRProvider>
-      <Layout infoPage={props.infoPage} title="Belle Palace Deptford – Belle Palace of Deptford – Belle Palace Deptford – Belle Palace of Deptford">
+      <Layout contentPage={props.contenPage} infoPage={props.infoPage} title="Belle Palace Deptford – Belle Palace of Deptford – Belle Palace Deptford – Belle Palace of Deptford">
         <SlideShow />
         <OurService />
-        <AboutUs />
+        <AboutUs content={props.contenPage} />
         <Calendar data={props.infoPage} />
-        <Certificate/>
+        <Certificate />
       </Layout>
     </SSRProvider>
   )
@@ -43,16 +44,18 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     const infoPage = await getInfoPage()
     return {
       props: {
-        param:pramSearch,
+        param: pramSearch,
         data: listData,
         infoPage: infoPage
       }
     }
-  }else{
+  } else {
+    const contenPage = await getContentPage()
     const infoPage = await getInfoPage()
     return {
       props: {
-        infoPage: infoPage
+        infoPage: infoPage,
+        contenPage:contenPage
       }
     }
   }

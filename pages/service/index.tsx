@@ -4,20 +4,20 @@ import SSRProvider from "react-bootstrap/SSRProvider";
 import style from "./service.module.css";
 import { Container } from "react-bootstrap";
 import ListServices from "./components/list-services/list-services";
-import { getInfoPage, getServices } from "../../core/apis";
+import { getContentPage, getInfoPage, getServices } from "../../core/apis";
 
-const Service: NextPage = (props:any) => {
+const Service: NextPage = (props: any) => {
     return (
         <SSRProvider>
-            <Layout infoPage={props.res.infoPage} title="Belle Palace Deptford – Belle Palace of Deptford – Belle Palace Deptford – Belle Palace of Deptford">
+            <Layout contentPage={props.contenPage} infoPage={props.infoPage} title="Belle Palace Deptford – Belle Palace of Deptford – Belle Palace Deptford – Belle Palace of Deptford">
                 <div className={style.bg}>
                     <div className={style.overlayWhite}>
                         <Container className={style.container}>
                             <div className={style.heading}>
                                 <h2 className="color-primary">Our Services</h2>
                             </div>
-                            <ListServices data={props.res.services}/>
-                            
+                            <ListServices data={props.services} />
+
                         </Container>
                     </div>
                 </div>
@@ -28,12 +28,12 @@ const Service: NextPage = (props:any) => {
 export const getServerSideProps: GetServerSideProps = async () => {
     const services = await getServices()
     const infoPage = await getInfoPage()
+    const contenPage = await getContentPage()
     return {
         props: {
-            res: {
-                infoPage,
-                services
-            }
+            infoPage,
+            services,
+            contenPage
         }
     }
 }

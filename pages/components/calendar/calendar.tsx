@@ -1,10 +1,8 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import { formatPhone } from '../../core/utils/formatPhone'
 import style from './calendar.module.css'
 
-const Calendar = (props:any) => {
-    const result = props.data.result
+const Calendar = () => {
     return (
         <div className={style.container}>
             <Container className="custom">
@@ -49,7 +47,7 @@ const Calendar = (props:any) => {
                                     Address:
                                 </div>
                                 <div className={style.info_normal}>
-                                    {result?.address}
+                                {process.env.NEXT_PUBLIC_ADDRESS_STORE}
                                 </div>
                             </div>
                             <div className={style.info_content}>
@@ -57,21 +55,15 @@ const Calendar = (props:any) => {
                                     Phone:
                                 </div>
                                 <div className={style.info_normal}>
-                                {formatPhone(result?.phone)}
+                                {process.env.NEXT_PUBLIC_PHONE_STORE}
                                 </div>
                             </div>
                         </div>
                     </Col>
                     <Col sm="6" className={`${style.gg_map} full-md`}>
                         <div className={style.iframe}>
-                            <iframe
-                                width="600"
-                                height="450"
-                                style={{border:0}}
-                                loading="lazy"
-                                allowFullScreen
-                                src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyB12a91SpS1s699OhnsEyMKk58pYdfv_Ec&q=${result?.address}`}>
-                            </iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.824937994379!2d-75.07010744847003!3d40.01235777931325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b6715bd9398d%3A0x39bf6ba763f3e3c3!2s5597%20Tulip%20St%2C%20Philadelphia%2C%20PA%2019124%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1638520692878!5m2!1svi!2s" width="600" height="450" style={{border:0}} allowFullScreen loading="lazy"></iframe>
+
                         </div>
                     </Col>
                 </Row>
